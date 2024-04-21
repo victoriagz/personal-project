@@ -1,0 +1,22 @@
+.icons-container {
+  background-color: #fff0f3; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+  }
+  
+  .div-icon {
+    margin: 10px;
+    text-align: center; 
+  }
+  
+  .icon {
+    width: 10%;
+  }
+.title-icon{
+    font-size: 20px;
+}
+.subtitle-icon{
+    font-size: 15px;
+}

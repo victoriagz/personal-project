@@ -1,0 +1,51 @@
+.header-nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu-icon {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .open {
+      display: block;
+    }
+  }
+}
+
+
+.button{
+  margin-left: 15px;
+}
