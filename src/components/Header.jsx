@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import cart from "../images/icons/carrito-de-compras.png";
+import usuario from "../images/icons/usuario.png";
+import lupa from "../images/icons/lupa.png";
+import menu from "../images/icons/menu.png";
 import "../styles/Header.scss";
 
 function Header() {
@@ -11,9 +15,12 @@ function Header() {
 
   return (
     <nav className="header-nav">
-      <div className="menu-icon" onClick={toggleMenu}>
-        ☰
-      </div>
+      <img
+        onClick={toggleMenu}
+        className="menu-icon"
+        src={menu}
+        alt="menu icon"
+      />
       <ul className={`nav-list ${isMenuOpen ? "open" : ""}`}>
         <li>
           <Link to="/">HOME</Link>
@@ -32,9 +39,9 @@ function Header() {
         </li>
       </ul>
       <section className="nav-buttons">
-        <button className="button">Search</button>
-        <button className="button">Login</button>
-        <button className="button">Cart</button>
+        <img className="button" src={lupa} alt="" />
+        <img className="button" src={usuario} alt="" />
+        <img className="button" src={cart} alt="" />
       </section>
     </nav>
   );
